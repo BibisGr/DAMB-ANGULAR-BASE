@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <h1 class="display-2 text-primary text-center">Clase Typescript</h1>
+</div>
+<div class="container-fluid">
+  <div class="card">
+    <h2>Nombre: {{nombre}}</h2>
+    <h3>Edad: {{edad}}</h3>
+    <ul>
+      <li>Mayor de Edad: {{mayordeEdad}}</li>
+    </ul>
+    <p>Frutas: {{frutas}}</p>
+    <p>Fruta Nombre: {{fruta.nombre}}</p>
+    <p>Fruta Color: {{fruta.color}}</p>
+    <p>Fruta Sabor: {{fruta.sabor}}</p>
+    <p>Fruta Peso: {{fruta.peso}}g</p>
+    <p>Fruta Textura: {{fruta.textura}}</p>
+    <p>Fruta caducada: {{fruta.caducada}}</p>
+<!--    <h5>{{sicaducada()}}</h5>-->
+<!--    @if (!fruta.caducada) {-->
+<!--      <h5>Vender</h5>-->
+<!--    } @else {-->
+<!--      <h5>No Vender</h5>-->
+<!--    }-->
+
+    <h5>{{!fruta.caducada? 'Vender': 'No Vender'}}</h5>
+    <h6>{{mayordeEdad? 'Es un adulto': 'No es un adulto'}}</h6>
+    <p>{{notas}}</p>
+    <h4>{{sumanota()}}</h4>
+  </div>
+</div>
