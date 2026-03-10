@@ -17,7 +17,11 @@ export class NavbarComponent {
       name: "Personajes",
     },
     {
-      url: "/About",
+      url: "/personaje",
+      name: "Personaje",
+    },
+    {
+      url: "/about",
       name: "About Us",
     },
 
